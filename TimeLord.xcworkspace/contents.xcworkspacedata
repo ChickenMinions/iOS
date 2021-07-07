@@ -4,4 +4,7 @@
    <FileRef
       location = "group:Main/TimeLord.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:UserProfile/UserProfile.xcodeproj">
+   </FileRef>
 </Workspace>
