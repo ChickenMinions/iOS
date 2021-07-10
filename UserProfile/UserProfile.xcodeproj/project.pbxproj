@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		504BE6A82695F19D008D13D1 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504BE6A72695F19D008D13D1 /* Color+Extensions.swift */; };
 		50E56CEE2695E8F8006CA23D /* UserProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E56CE42695E8F8006CA23D /* UserProfile.framework */; };
 		50E56CF32695E8F8006CA23D /* UserProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E56CF22695E8F8006CA23D /* UserProfileTests.swift */; };
 		50E56CF52695E8F8006CA23D /* UserProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E56CE72695E8F8006CA23D /* UserProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		504BE6A72695F19D008D13D1 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		50E56CE42695E8F8006CA23D /* UserProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E56CE72695E8F8006CA23D /* UserProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfile.h; sourceTree = "<group>"; };
 		50E56CE82695E8F8006CA23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				50E56CE72695E8F8006CA23D /* UserProfile.h */,
 				50E56CE82695E8F8006CA23D /* Info.plist */,
+				50ED692726997E85000712E2 /* Extensions */,
 			);
 			path = UserProfile;
 			sourceTree = "<group>";
@@ -84,6 +87,14 @@
 				50E56CF42695E8F8006CA23D /* Info.plist */,
 			);
 			path = UserProfileTests;
+			sourceTree = "<group>";
+		};
+		50ED692726997E85000712E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				504BE6A72695F19D008D13D1 /* Color+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 				TargetAttributes = {
 					50E56CE32695E8F8006CA23D = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					50E56CEC2695E8F8006CA23D = {
 						CreatedOnToolsVersion = 12.5;
@@ -194,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504BE6A82695F19D008D13D1 /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +354,7 @@
 		50E56CF92695E8F8006CA23D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TSTQSY2TJN;
@@ -357,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ohlulu.UserProfile;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +380,7 @@
 		50E56CFA2695E8F8006CA23D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TSTQSY2TJN;
@@ -389,6 +405,7 @@
 		50E56CFC2695E8F8006CA23D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSTQSY2TJN;
 				INFOPLIST_FILE = UserProfileTests/Info.plist;
@@ -407,6 +424,7 @@
 		50E56CFD2695E8F8006CA23D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSTQSY2TJN;
 				INFOPLIST_FILE = UserProfileTests/Info.plist;
